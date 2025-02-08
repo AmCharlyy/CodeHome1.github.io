@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retos y Competencias - CodeHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav id="navbar">
+    <div class="logo">CodeHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="editor.html">Editor</a></li>
+      <li><a href="community.html">Comunidad</a></li>
+      <li><a href="challenges.html" class="active">Retos</a></li>
+      <li><a href="learning.html">Aprendizaje</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="profile.html">Perfil</a></li>
+      <li><a href="notifications.html">Notificaciones</a></li>
+      <li><a href="settings.html">Configuración</a></li>
+    </ul>
+  </nav>
+  
+  <div id="main-content">
+    <section id="challenges" class="section">
+      <header class="section-header">
+        <h2>Retos y Competencias</h2>
+        <p>Participa en retos diarios y compite en competencias en vivo.</p>
+        <div class="challenge-stats">
+          <div class="stat-box">
+            <span class="stat-number">1,245</span>
+            <span class="stat-label">Retos Activos</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">24,589</span>
+            <span class="stat-label">Participantes</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">358</span>
+            <span class="stat-label">Competencias</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="challenges-filters">
+        <div class="filter-group">
+          <label>Dificultad:</label>
+          <select class="filter-select">
+            <option>Todas</option>
+            <option>Principiante</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Categoría:</label>
+          <select class="filter-select">
+            <option>Todas</option>
+            <option>Algoritmos</option>
+            <option>Web Development</option>
+            <option>Machine Learning</option>
+          </select>
+        </div>
+        <input type="text" class="search-challenges" placeholder="Buscar retos...">
+      </div>
+
+      <div class="challenges-grid">
+        <!-- Reto Diario -->
+        <div class="challenge-card box">
+          <div class="challenge-header">
+            <span class="difficulty beginner">Principiante</span>
+            <span class="time-left">24h restantes</span>
+          </div>
+          <h3>Búsqueda Binaria</h3>
+          <p class="challenge-desc">Implementa un algoritmo de búsqueda binaria en tu lenguaje favorito</p>
+          <div class="challenge-meta">
+            <span class="participants">1,245 participantes</span>
+            <span class="reward">+50 XP</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 65%"></div>
+          </div>
+          <button class="action-btn start-challenge">Iniciar Reto</button>
+        </div>
+
+        <!-- Competencia Semanal -->
+        <div class="challenge-card box">
+          <div class="challenge-header">
+            <span class="difficulty advanced">Avanzado</span>
+            <span class="time-left">3d 12h restantes</span>
+          </div>
+          <h3>Aplicación Web Fullstack</h3>
+          <p class="challenge-desc">Crea una aplicación completa con frontend y backend en 24 horas</p>
+          <div class="challenge-meta">
+            <span class="participants">845 participantes</span>
+            <span class="reward">Premio: $500</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 45%"></div>
+          </div>
+          <button class="action-btn join-competition">Unirse a Competencia</button>
+        </div>
+
+        <!-- Ranking de Líderes -->
+        <div class="leaderboard box">
+          <h3>Ranking de Líderes</h3>
+          <div class="leaderboard-list">
+            <div class="leader-item">
+              <span class="rank">1</span>
+              <span class="user">CodeMaster</span>
+              <span class="points">12,450 XP</span>
+            </div>
+            <div class="leader-item">
+              <span class="rank">2</span>
+              <span class="user">DevPro</span>
+              <span class="points">11,200 XP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categorías de Retos -->
+        <div class="categories-grid">
+          <div class="category-card box">
+            <h4>Algoritmos</h4>
+            <p>125 retos disponibles</p>
+            <button class="action-btn">Ver Retos</button>
+          </div>
+          <div class="category-card box">
+            <h4>Seguridad</h4>
+            <p>68 retos disponibles</p>
+            <button class="action-btn">Ver Retos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>

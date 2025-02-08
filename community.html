@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidad - CodeHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav id="navbar">
+    <div class="logo">CodeHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="editor.html">Editor</a></li>
+      <li><a href="community.html" class="active">Comunidad</a></li>
+      <li><a href="challenges.html">Retos</a></li>
+      <li><a href="learning.html">Aprendizaje</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="profile.html">Perfil</a></li>
+      <li><a href="notifications.html">Notificaciones</a></li>
+      <li><a href="settings.html">Configuración</a></li>
+    </ul>
+  </nav>
+  
+  <div id="main-content">
+    <section id="social" class="section">
+      <header class="section-header">
+        <h2>Comunidad de Desarrolladores</h2>
+        <p>Comparte tus proyectos, resuelve dudas y colabora con otros desarrolladores.</p>
+        <div class="community-stats">
+          <div class="stat-item">
+            <span class="stat-number">15,342</span>
+            <span class="stat-label">Miembros</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2,456</span>
+            <span class="stat-label">Temas Activos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">58</span>
+            <span class="stat-label">En Línea</span>
+          </div>
+        </div>
+      </header>
+      
+      <div class="social-container">
+        <!-- Foro Mejorado -->
+        <div id="forum" class="box">
+          <div class="forum-header">
+            <h3>Foro de Discusión</h3>
+            <div class="forum-filters">
+              <select class="filter-select">
+                <option>Todos los temas</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>Java</option>
+              </select>
+              <input type="text" class="search-input" placeholder="Buscar temas...">
+            </div>
+          </div>
+          <div class="forum-topics">
+            <article class="topic">
+              <div class="topic-votes">
+                <button class="vote-btn">↑</button>
+                <span>245</span>
+                <button class="vote-btn">↓</button>
+              </div>
+              <div class="topic-content">
+                <h4>¿Cómo optimizar el rendimiento en JavaScript?</h4>
+                <div class="topic-meta">
+                  <span class="user">JuanPérez</span>
+                  <span class="tag javascript">JavaScript</span>
+                  <span class="comments">15 comentarios</span>
+                  <span class="time">Hace 2 horas</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="topic">
+              <div class="topic-votes">
+                <button class="vote-btn">↑</button>
+                <span>178</span>
+                <button class="vote-btn">↓</button>
+              </div>
+              <div class="topic-content">
+                <h4>Errores comunes en Python y cómo solucionarlos</h4>
+                <div class="topic-meta">
+                  <span class="user">AnaDev</span>
+                  <span class="tag python">Python</span>
+                  <span class="comments">20 comentarios</span>
+                  <span class="time">Hace 5 horas</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="forum-actions">
+            <button id="new-topic" class="action-btn">Nuevo Tema</button>
+            <div class="pagination">
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Comunidad -->
+        <div class="community-sidebar">
+          <!-- Chat Mejorado -->
+          <div id="chat" class="box">
+            <div class="chat-header">
+              <h3>Chat en Vivo</h3>
+              <span class="online-count">58 en línea</span>
+            </div>
+            <div id="chat-window">
+              <div class="message">
+                <img src="https://via.placeholder.com/30" class="user-avatar">
+                <div class="message-content">
+                  <span class="user">MariaDev</span>
+                  <p>Alguien para colaborar en proyecto open source?</p>
+                  <span class="time">14:32</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-controls">
+              <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+              <button id="send-chat" class="action-btn">Enviar</button>
+            </div>
+          </div>
+
+          <!-- Eventos -->
+          <div class="community-events box">
+            <h3>Próximos Eventos</h3>
+            <div class="event-item">
+              <div class="event-date">
+                <span class="day">25</span>
+                <span class="month">Mar</span>
+              </div>
+              <div class="event-info">
+                <h4>Webinar: Patrones de Diseño</h4>
+                <p>18:00 - 20:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>

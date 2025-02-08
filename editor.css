@@ -1,0 +1,171 @@
+/* Variables CSS para fácil personalización */
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #43a047;
+    --bg-dark: #1e1e1e;
+    --bg-darker: #121212;
+    --bg-light: #2c2c2c;
+    --text-color: #e0e0e0;
+    --accent-color: #333;
+  }
+  
+  /* Reset global */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body y fuente */
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* ----------------------------- */
+  /* Estilos para la Barra de Navegación */
+  /* ----------------------------- */
+  #navbar {
+    background-color: var(--bg-darker);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  #navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  #navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  #navbar .nav-links li {
+    margin-left: 2rem;
+  }
+  
+  #navbar .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  #navbar .nav-links a:hover, #navbar .nav-links a.active {
+    color: var(--primary-color);
+  }
+  
+  /* ----------------------------- */
+  /* Estilos para el Contenedor Principal */
+  /* ----------------------------- */
+  #main-content {
+    padding: 2rem;
+  }
+  
+  /* ----------------------------- */
+  /* Estilos para el Editor de Código */
+  /* ----------------------------- */
+  #code-editor {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: var(--bg-darker);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  
+  .editor-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #language-select {
+    background-color: var(--bg-light);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #language-select:hover {
+    background-color: var(--bg-darker);
+  }
+  
+  .action-btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .editor-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  #editor {
+    width: 100%;
+    height: 400px;
+    background-color: var(--bg-darker);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    resize: vertical;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #editor:focus {
+    border-color: var(--primary-color);
+  }
+  
+  #output {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--bg-darker);
+    border-radius: 4px;
+  }
+  
+  .output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  #output-console {
+    background-color: var(--bg-dark);
+    padding: 1rem;
+    border-radius: 4px;
+    height: 200px;
+    overflow-y: auto;
+    font-family: monospace;
+    color: var(--text-color);
+  }
+  
+  /* ----------------------------- */
+  /* Animaciones */
+  /* ----------------------------- */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

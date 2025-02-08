@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos y Tutoriales - CodeHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav id="navbar">
+    <div class="logo">CodeHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="editor.html">Editor</a></li>
+      <li><a href="community.html">Comunidad</a></li>
+      <li><a href="challenges.html">Retos</a></li>
+      <li><a href="learning.html" class="active">Aprendizaje</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="profile.html">Perfil</a></li>
+      <li><a href="notifications.html">Notificaciones</a></li>
+      <li><a href="settings.html">Configuración</a></li>
+    </ul>
+  </nav>
+  
+  <div id="main-content">
+    <section id="learning" class="section">
+      <header class="section-header">
+        <h2>Cursos y Tutoriales</h2>
+        <p>Aprende nuevos lenguajes y frameworks con cursos interactivos y tutoriales.</p>
+        <div class="learning-stats">
+          <div class="stat-box">
+            <span class="stat-number">1,245</span>
+            <span class="stat-label">Cursos Disponibles</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">24,589</span>
+            <span class="stat-label">Estudiantes Activos</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">358</span>
+            <span class="stat-label">Instructores</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="learning-filters">
+        <div class="filter-group">
+          <label>Nivel:</label>
+          <select class="filter-select">
+            <option>Todos</option>
+            <option>Principiante</option>
+            <option>Intermedio</option>
+            <option>Avanzado</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Categoría:</label>
+          <select class="filter-select">
+            <option>Todas</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>Web Development</option>
+            <option>Data Science</option>
+          </select>
+        </div>
+        <input type="text" class="search-courses" placeholder="Buscar cursos...">
+      </div>
+
+      <div class="learning-grid">
+        <!-- Curso de JavaScript Avanzado -->
+        <div class="course-card box">
+          <div class="course-header">
+            <span class="level advanced">Avanzado</span>
+            <span class="duration">15h</span>
+          </div>
+          <h3>JavaScript Avanzado</h3>
+          <p class="course-desc">Aprende conceptos avanzados de JavaScript con ejemplos prácticos.</p>
+          <div class="course-meta">
+            <span class="rating">★★★★☆ (4.5)</span>
+            <span class="students">1,245 estudiantes</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 65%"></div>
+          </div>
+          <button class="action-btn enroll-course">Inscribirse</button>
+        </div>
+
+        <!-- Curso de Python -->
+        <div class="course-card box">
+          <div class="course-header">
+            <span class="level beginner">Principiante</span>
+            <span class="duration">10h</span>
+          </div>
+          <h3>Introducción a Python</h3>
+          <p class="course-desc">Curso básico para comenzar a programar en Python.</p>
+          <div class="course-meta">
+            <span class="rating">★★★★★ (5.0)</span>
+            <span class="students">2,845 estudiantes</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 45%"></div>
+          </div>
+          <button class="action-btn enroll-course">Inscribirse</button>
+        </div>
+
+        <!-- Categorías de Cursos -->
+        <div class="categories-grid">
+          <div class="category-card box">
+            <h4>Desarrollo Web</h4>
+            <p>125 cursos disponibles</p>
+            <button class="action-btn">Explorar</button>
+          </div>
+          <div class="category-card box">
+            <h4>Data Science</h4>
+            <p>68 cursos disponibles</p>
+            <button class="action-btn">Explorar</button>
+          </div>
+        </div>
+
+        <!-- Instructores Destacados -->
+        <div class="instructors-grid">
+          <div class="instructor-card box">
+            <img src="https://via.placeholder.com/80" class="instructor-avatar">
+            <h4>Juan Pérez</h4>
+            <p>Experto en JavaScript</p>
+            <span class="courses">15 cursos</span>
+          </div>
+          <div class="instructor-card box">
+            <img src="https://via.placeholder.com/80" class="instructor-avatar">
+            <h4>Ana Gómez</h4>
+            <p>Especialista en Python</p>
+            <span class="courses">10 cursos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeHub - Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBwnK7efciXd0gU8P-ibgBVzrwo5HWQol8",
+    authDomain: "codehome-1e7df.firebaseapp.com",
+    projectId: "codehome-1e7df",
+    storageBucket: "codehome-1e7df.firebasestorage.app",
+    messagingSenderId: "278987173576",
+    appId: "1:278987173576:web:1f3db2c7271143856d7ffd",
+    measurementId: "G-9FF1E8LF7M"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<body>
+  <!-- Barra de Navegación -->
+  <nav id="navbar">
+    <div class="logo">CodeHub</div>
+    <ul class="nav-links">
+      <li><a href="editor.html">Editor</a></li>
+      <li><a href="community.html">Comunidad</a></li>
+      <li><a href="challenges.html">Retos</a></li>
+      <li><a href="learning.html">Aprendizaje</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="profile.html">Perfil</a></li>
+      <li><a href="notifications.html">Notificaciones</a></li>
+      <li><a href="settings.html">Configuración</a></li>
+    </ul>
+  </nav>
+
+  <div id="main-content">
+    <!-- Sección Principal -->
+    <section class="section">
+      <header class="section-header">
+        <h2>Bienvenido a CodeHub</h2>
+        <p>La plataforma definitiva para programadores: Programa, prueba, comparte y conecta.</p>
+      </header>
+      <div class="quick-actions">
+        <a href="editor.html" class="action-btn">Nuevo Proyecto</a>
+        <a href="challenges.html" class="action-btn">Ver Retos</a>
+        <a href="community.html" class="action-btn">Unirse a Comunidad</a>
+      </div>
+    </section>
+
+    <!-- Tendencias Recientes -->
+    <section class="section">
+      <header class="section-header">
+        <h2>Tendencias Recientes</h2>
+        <p>Lo más popular en la comunidad</p>
+      </header>
+      <div class="trends-grid">
+        <div class="trend-item box">
+          <h3>#WebDevelopment</h3>
+          <p>+1200 proyectos esta semana</p>
+          <div class="trend-progress"></div>
+        </div>
+        <div class="trend-item box">
+          <h3>#MachineLearning</h3>
+          <p>+850 contribuciones</p>
+          <div class="trend-progress"></div>
+        </div>
+        <div class="trend-item box">
+          <h3>#MobileApps</h3>
+          <p>+650 nuevos proyectos</p>
+          <div class="trend-progress"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos Recientes -->
+    <section class="section">
+      <header class="section-header">
+        <h2>Proyectos Recientes</h2>
+        <p>Últimas publicaciones de la comunidad</p>
+      </header>
+      <div class="projects-grid">
+        <div class="project-card box">
+          <div class="project-header">
+            <h3>Chatbot AI</h3>
+            <span class="project-lang">Python</span>
+          </div>
+          <p class="project-desc">Sistema de chatbot con procesamiento de lenguaje natural</p>
+          <div class="project-stats">
+            <span>★ 245</span>
+            <span>↗ 45</span>
+          </div>
+        </div>
+        <!-- Más proyectos... -->
+      </div>
+    </section>
+
+    <!-- Lenguajes Populares -->
+    <section class="section">
+      <header class="section-header">
+        <h2>Lenguajes Populares</h2>
+        <p>Top tecnologías usadas esta semana</p>
+      </header>
+      <div class="languages-carousel">
+        <div class="lang-item box">
+          <div class="lang-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>+1500 proyectos</p>
+        </div>
+        <!-- Más lenguajes... -->
+      </div>
+    </section>
+
+    <!-- Colaboraciones -->
+    <section class="section">
+      <header class="section-header">
+        <h2>Colabora</h2>
+        <p>Únete a proyectos colaborativos</p>
+      </header>
+      <div class="collab-grid">
+        <div class="collab-card box">
+          <h3>Open Source</h3>
+          <p>Contribuye a proyectos de código abierto</p>
+          <button class="action-btn">Ver Proyectos</button>
+        </div>
+        <div class="collab-card box">
+          <h3>Equipos</h3>
+          <p>Forma parte de un equipo de desarrollo</p>
+          <button class="action-btn">Buscar Equipos</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

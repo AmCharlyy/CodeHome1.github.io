@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de Código - CodeHub</title>
+  <link rel="stylesheet" href="css/editor.css">
+  <!-- CodeMirror CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav id="navbar">
+    <div class="logo">CodeHub</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="editor.html" class="active">Editor</a></li>
+      <li><a href="community.html">Comunidad</a></li>
+      <li><a href="challenges.html">Retos</a></li>
+      <li><a href="learning.html">Aprendizaje</a></li>
+      <li><a href="profile.html">Perfil</a></li>
+    </ul>
+  </nav>
+
+  <div id="main-content">
+    <!-- Sección del Editor de Código -->
+    <section id="code-editor" class="section">
+      <div class="editor-controls">
+        <select id="language-select" class="action-btn">
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+        </select>
+        <button id="run-code" class="action-btn">▶ Ejecutar</button>
+        <button id="clear-code" class="action-btn">🗑 Limpiar</button>
+      </div>
+      <div class="editor-container">
+        <textarea id="editor"></textarea>
+      </div>
+      <div id="output" class="box">
+        <div class="output-header">
+          <h3>Consola</h3>
+          <button id="clear-output" class="action-btn">Limpiar</button>
+        </div>
+        <pre id="output-console">Salida del código...</pre>
+      </div>
+    </section>
+  </div>
+
+  <!-- CodeMirror y Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
